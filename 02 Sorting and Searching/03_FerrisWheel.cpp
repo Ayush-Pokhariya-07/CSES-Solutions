@@ -1,3 +1,16 @@
+// ✅ Problem: Ferris Wheel
+// 🔗 Link: https://cses.fi/problemset/task/1090
+// 🧠 Idea: Pair the heaviest person with the lightest person if their total ≤ x
+// 🚀 Time: O(n log n), Space: O(1) extra
+
+// 🔥 Approach:
+// 1. Sort the array of weights
+// 2. Use two pointers: left (lightest), right (heaviest)
+// 3. If they fit together in one gondola (sum ≤ x), move both pointers
+// 4. Else, the heavier person goes alone (move only right pointer)
+// Count every attempt (whether solo or pair)
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
